@@ -1,0 +1,17 @@
+<div class="search-div">
+        Search here:
+        <input type="text" name="search" [(ngModel)]="str">
+</div>
+<table>
+        <thead>
+                <tr>
+                        <td *ngFor="let item of header">{{item | uppercase}}</td>
+                </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let item of obj  | searchPipe : str">
+                        <td> {{item.name }}</td>
+                        <td>{{item.date}}</td>
+                </tr>
+        </tbody>
+</table>

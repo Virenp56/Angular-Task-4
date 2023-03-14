@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+thead {
+    text-align: center;
+    background-color: rgb(160, 230, 252);
+    border-bottom: 1px solid black;
+}
+
+tbody {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px 20px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(247, 219, 183);
+}
+
+.search-div {
+    text-align: center;
+    margin: 30px;
+}
+
+input {
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 1px 1px 9px #888888;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+input:focus {
+    outline: 0;
+}
